@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tailwind project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+   
+    <!-- navbar -->
+    <nav class="bg-white p-3 flex justify-between items-center fixed right-0 top-0 left-0">
+        <a href="#" class=" flex items-center gap-2 ">
+            <img class="object-cover max-h-12 max-w-12" src="assets/asset 0.png" alt="logo">
+             <span class="text-lg font-semibold">Todesktop</span>     
+        </a>
+        <div class=" hidden lg:flex gap-12 font-semibold text-lg">
+            <a class="hover:text-blue-700" href="#">pricing</a>
+            <a class="hover:text-blue-700" href="#">docs</a>
+            <a class="hover:text-blue-700" href="#">challengelog</a>
+            <a class="hover:text-blue-700" href="#">blog</a>
+            <a class="hover:text-blue-700" href="#">login</a>
+        </div>
+        <button class=" hidden lg:flex items-center gap-3 p-3 border px-6 py-2 border-gray-800 rounded-lg hover:border-yellow-500">
+            <img src="assets/asset 1.svg" alt="">
+            <span class=" text-lg font-semibold">Electronsdevelopers</span>
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+        
+        <button class="p-2 lg:hidden" onclick="handlemenu()">
+            <i class="fa-solid fa-bars text-gray-700 "></i>
+        </button>
+    </nav>
+    <!-- hero section  -->
+     <main class="mt-20">
+        <div class=" bg-gradient-to-br from-purple-100 via-yellow-100 to-blue-100">
+            <div class=" max-w-4xl px-6 pt-6 mx-auto flex flex-col sm:items-center sm:text-center" >
+
+                <div class="font-medium my-6 border border-yellow-500 bg-yellow-100 rounded-lg px-4 py-1 font-semibold w-fit items-center hover:shadow-xl hover:shadow-yellow-500/50">
+                    <span>v0.22.1</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+
+                <h1 class="text-4xl sm:text-5xl font-medium leading-snug">
+                    Web app to desktop app in minutes
+                </h1>
+                <p class= " font-semibold sm:text-2xl smfont-medium mt-4">
+                    Take your web app codebase and transform it into a cross platform desktop app with native functionality. 
+                </p>
+                <div class="mt-14 gap-2 flex flex-col">
+                <button class="border border-blue-800 bg-blue-800 text-white rounded-lg px-6 py-2 font-medium hover:opacity-90">DOWNLOAD NOW</button>
+                <button class=" mt-2 border border-gray-800 bg-gray-400 text-black rounded-lg px-6 py-2 font-medium hover:opacity-85" >read docs</button>
+                </div>
+            </div>
+            <!-- step by step section-->
+             
+             <div  class=" flex flex-col gap-6 h-12 max-w-7xl px-6 py-16 mt-8 mx-auto">
+                
+                <div id="step1" class=" gap-6 mt-16 bg-gradient-to-b to-blue-50 via-yellow-100 from-purple-100 border mt-4 border-gray-500 px-6 py-6 rounded-lg flex flex-col lg:flex-row">
+                    <div  class="flex flex-col gap-6 lg:w-1/2">
+                        <span class= "border-yellow-400 border text-lg bg-yellow-200 w-fit px-3 py-1 rounded-lg hover:bg-yellow-100">step1</span>
+                        <h3 class="text-4xl font-medium">Bootstrap straight from your web app</h3>
+                        <p class="text-lg font-normal">Copy and paste your web app url into ToDesktop. Customise your app design, app icon and window frame UI with no code.</p>
+                        <ul class=" font-normal grid grid-cols-2 gap-2 ">
+                            <li class="hover:underline">
+                                <i class="fa-solid fa-right-from-bracket"></i>
+                                <span> multiple windows</span>
+                            </li>
+                            <li class="hover:underline">
+                                <i class="fa-solid fa-right-from-bracket"></i>
+                                <span> customisable menus </span>
+                            </li><li class="hover:underline">
+                                <i class="fa-solid fa-right-from-bracket"></i>
+                                <span> menu bar</span>
+                            </li><li class="hover:underline">
+                                <i class="fa-solid fa-right-from-bracket"></i>
+                                <span> offline support</span>
+                            </li><li class="hover:underline">
+                                <i class="fa-solid fa-right-from-bracket"></i>
+                                <span> launch on startup</span>
+                            </li><li class="hover:underline">
+                                <i class="fa-solid fa-right-from-bracket"></i>
+                                <span> tabs(mac only)</span>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="pt-10">
+                        <img src="assets/asset 66.svg" alt="">
+                    </div>
+
+
+                </div>
+                <div id="step2" class=" gap-6 mt-16 bg-gradient-to-b to-blue-50 via-yellow-100 from-purple-100 border mt-4 border-gray-500 px-6 py-6 rounded-lg flex flex-col lg:flex-row" >
+                    <div class="flex flex-col gap-6 lg:w-1/2">
+                        <span class= "border-yellow-400 border text-lg bg-yellow-200 w-fit px-3 py-1 rounded-lg hover:bg-yellow-100">step2</span>
+                        <h3 class="text-4xl font-medium">Add desktop app to customize your web apps</h3>
+                        <p class="text-lg font-normal">No need to create a new repository, just add code from our desktop APIs to your codebase and get access to system level functionality.</p>
+                        <ul class=" font-normal grid grid-cols-2 gap-2 ">
+                            <li class="hover:underline">
+                                <i class="fa-solid fa-right-from-bracket"></i>
+                                <span> multiple windows</span>
+                            </li>
+                            <li class="hover:underline">
+                                <i class="fa-solid fa-right-from-bracket"></i>
+                                <span> customisable menus </span>
+                            </li><li class="hover:underline">
+                                <i class="fa-solid fa-right-from-bracket"></i>
+                                <span> menu bar</span>
+                            </li><li class="hover:underline">
+                                <i class="fa-solid fa-right-from-bracket"></i>
+                                <span> offline support</span>
+                            </li><li class="hover:underline">
+                                <i class="fa-solid fa-right-from-bracket"></i>
+                                <span> launch on startup</span>
+                            </li><li class="hover:underline">
+                                <i class="fa-solid fa-right-from-bracket"></i>
+                                <span> tabs(mac only)</span>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="pt-10 size-72 mb-10 ml-8 lg:ml-20">
+                        <img src="assets/asset 46.png" alt="">
+                    </div>
+                    
+
+             </div>
+             <div id="step3" class="  gap-6 mt-16 bg-gradient-to-b to-blue-50 via-yellow-100 from-purple-100 border mt-4 border-gray-500 px-6 py-6 rounded-lg flex flex-col lg:flex-row">
+                <div class="flex flex-col gap-6 lg:w-1/2">
+                    <span class= "border-yellow-400 border bg-yellow-200  text-lg w-fit px-3 py-1 rounded-lg hover:bg-yellow-100">step3</span>
+                    <h3 class="text-4xl font-medium">Publish</h3>
+                    <p class="text-lg font-normal">One-click will publish your desktop app to your customers and give you a download link to put on your website..</p>
+                    <ul class=" font-normal grid grid-cols-2 gap-2 ">
+                        <li class="hover:underline">
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                            <span> multiple windows</span>
+                        </li>
+                        <li class="hover:underline">
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                            <span> customisable menus </span>
+                        </li><li class="hover:underline">
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                            <span> menu bar</span>
+                        </li><li class="hover:underline">
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                            <span> offline support</span>
+                        </li><li class="hover:underline">
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                            <span> launch on startup</span>
+                        </li><li class="hover:underline">
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                            <span> tabs(mac only)</span>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="pt-10">
+                    <img src="assets/asset 66.svg" alt="">
+                </div>
+                
+            </div>
+            <!-- grid section -->
+             
+            <div class="flex flex-col px-6 py-16 mx-auto justify-center gap-6  ">
+                <h2 class="text-5xl font-medium mb-5 leading-snug">Todesktop handles the details</h2>
+                <div class="flex flex-col gap-6 lg:grid lg:grid-cols-3 " style="grid-auto-rows: 96px;">
+                <div class=" row-start-1 row-end-3 bg-slate-100 g gap-6 flex flex-col w-full h-full items-center px-10 py-4 rounded-xl hover:bg-gradient-to-br from hover:bg-purple-50 via hover:bg-yellow-50 to hover:bg-blue-50">
+                   <h1 class=" font-medium text-lg font-semibold">native notifications</h1>
+                   <img src="assets/asset 37.png" alt="">
+                </div>
+                <div class=" row-start-1 row-end-4 bg-slate-100 border-gray-950 gap-6 flex flex-col w-full h-full items-center px-10 py-4 rounded-xl hover:bg-gradient-to-br from hover:bg-purple-50 via hover:bg-yellow-50 to hover:bg-blue-50">
+                    <h1 class=" font-medium text-lg font-semibold">Auto Updates</h1>
+                    <p class="text-lg">We’ll ensure the underlying browser is up to date and deliver performance improvements, security patches, & additional features.</p>
+                    <img src="assets/asset 38.png" alt="">
+                 </div>
+                 
+                 <div class=" row-start-1 row-end-3 bg-slate-100 border-gray-950 gap-6 flex flex-col w-full h-full items-center px-10 py-4 rounded-xl hover:bg-gradient-to-br from hover:bg-purple-50 via hover:bg-yellow-50 to hover:bg-blue-50">
+                    <h1 class=" font-medium text-lg font-semibold">Plugins</h1>
+                    
+                    <img src="assets/asset 39.png" alt="">
+                 </div>
+                 
+                 <div class=" row-start-3 row-end-6 bg-slate-100 border-gray-950 gap-6 flex flex-col w-full h-full items-center px-10 py-4 rounded-xl hover:bg-gradient-to-br from hover:bg-purple-50 via hover:bg-yellow-50 to hover:bg-blue-50">
+                    <h1 class="  font-medium text-lg font-semibold">Access to Native APIs</h1>
+                    <p>ToDesktop ensures the underlying browser, performance improvements, security patches and additional features are always up to date.</p>
+                    <img src="assets/asset 40.png" alt="">
+                 </div>
+
+                 <div class=" row-start-4 row-end-6 bg-slate-100 border-gray-950 gap-6 flex flex-col w-full h-full items-center px-10 py-4 rounded-xl hover:bg-gradient-to-br from hover:bg-purple-50 via hover:bg-yellow-50 to hover:bg-blue-50">
+                    <h1 class=" font-medium text-lg font-semibold">Customizable look and feel</h1>
+                    <img src="assets/asset 41.png" alt="">
+                 </div>
+
+                 <div class=" row-start-3 row-end-6 bg-slate-100 border-gray-950 gap-6 flex flex-col w-full h-full items-center px-10 py-4 rounded-xl hover:bg-gradient-to-br from hover:bg-purple-50 via hover:bg-yellow-50 to hover:bg-blue-50">
+                    <h1 class=" font-medium text-lg font-semibold">Native Installers</h1>
+                    <p>We even provide a magic link which will detect your users operating system & download the most up to date version of your app.</p>
+                    <img src="assets/asset 43.png" alt="">
+                 </div>
+                </div>
+                
+            </div>
+            <!-- FAQs section -->
+             <div class=" flex flex-col px-6 py-4  mx-auto w-full h-full ">
+                <h2 class="text-7xl">FAQs</h2>
+                <div class="grid grid-cols-1 lg:grid-cols-2 mt-8 gap-6">
+                <div class=" border rounded-xl border-slate-600 bg-slate-100 px-4 py-4 h-full w-full p-6 ">
+                    <dt class="flex items-center justify-between">
+                        Is ToDesktop For Me?
+                        <i class="fa-solid fa-angle-down px-2"></i>
+                    </dt> 
+                </div>
+                <div class="border rounded-xl border-slate-600 bg-slate-100 px-4 py-4 h-full w-full ">
+                    <dt class="flex items-center justify-between">
+                        Can I try ToDesktop without buying?
+                        <i class="fa-solid fa-angle-down px-2"></i>
+                    </dt> 
+                </div>
+                <div class="border rounded-xl border-slate-600 bg-slate-100 px-4 py-4 h-full w-full ">
+                    <dt class="flex items-center justify-between">
+                        What features are on the product roadmap?
+                        <i class="fa-solid fa-angle-down px-2"></i>
+                    </dt> 
+                </div>
+                <div class="border rounded-xl border-slate-600 bg-slate-100 px-4 py-4 h-full w-full ">
+                    <dt class="flex items-center justify-between">
+                        Does ToDesktop work with sites built with ___?
+                        <i class="fa-solid fa-angle-down px-2"></i>
+                    </dt> 
+                </div>
+                <div class="border rounded-xl border-slate-600 bg-slate-100 px-4 py-4 h-full w-full ">
+                    <dt class="flex items-center justify-between">
+                        Do you collect or store data about my customers?
+                        <i class="fa-solid fa-angle-down px-2"></i>
+                    </dt> 
+                </div>
+                <div class="border rounded-xl border-slate-600 bg-slate-100 px-4 py-4 h-full w-full ">
+                    <dt class="flex items-center justify-between">
+                        Which version of Electron/Chromium is used?
+                        <i class="fa-solid fa-angle-down px-2"></i>
+                    </dt> 
+                </div>
+                <div class="border rounded-xl border-slate-600 bg-slate-100 px-4 py-4 h-full w-full ">
+                    <dt class="flex items-center justify-between">
+                        What support do you offer?
+                        <i class="fa-solid fa-angle-down px-2"></i>
+                    </dt> 
+                </div>
+                <div class="border rounded-xl border-slate-600 bg-slate-100 px-4 py-4 h-full w-full ">
+                    <dt class="flex items-center justify-between">
+                        Does ToDesktop work with sites built with ___?
+                        <i class="fa-solid fa-angle-down px-2"></i>
+                    </dt> 
+            
+                </div>
+                <!-- footer -->
+
+                <footer class="flex flex-col lg:flex-row justify-between items-center gap-8 p-6">
+                    <a href="#" class=" flex items-center gap-2 ">
+                        <img class="object-cover max-h-12 max-w-12" src="assets/asset 0.png" alt="logo">
+                         <span class="text-lg font-semibold">Todesktop</span>     
+                    </a>
+                    <div class="  flex flex-row gap-4 ">
+                        <i class="fa-brands fa-github  "></i>
+                        <i class="fa-brands fa-twitter"></i>
+                    </div >
+                    <a  class=" hover:text-blue-700" >documentation</a>
+
+                </footer>
+            
+             </div>
+             <div class="h-[1000px]"></div>
+     </div>
+    
+   
+</main>
+
+
+ 
+
+  
+
+ 
+
+</body> 
+   
+</html>
